@@ -1,0 +1,29 @@
+// font-family: "Josefin Sans", sans-serif;
+*,
+* ::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // outline: 1px solid red;
+}
+a {
+  text-decoration: none;
+}
+button,
+input {
+  border: none;
+  outline: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+body {
+  font-family: "Alata", sans-serif;
+}
+.wrapper {
+  max-width: 1158px;
+  padding: 0 24px;
+  margin: 0 auto;
+}

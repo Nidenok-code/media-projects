@@ -1,0 +1,111 @@
+.footer {
+  background-color: #000;
+  padding: 44px 0;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    .footerNav {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      .footer-navList {
+        display: flex;
+        gap: 16px 32px;
+        .footer-navList__item {
+          position: relative;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 167%;
+          color: #fff;
+          &::after {
+            content: "";
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            opacity: 0;
+            transition: all $transition;
+          }
+          &:hover {
+            &::after {
+              opacity: 1;
+              transform: translate(-50%, 10px);
+            }
+          }
+        }
+      }
+    }
+    .footer-social {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 24px;
+      .footer__socialMedia {
+        display: flex;
+        gap: 16px;
+        .socialMedia-item {
+          position: relative;
+          &::after {
+            content: "";
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            opacity: 0;
+            transition: all $transition;
+          }
+          &:hover {
+            &::after {
+              opacity: 1;
+              transform: translate(-50%, 10px);
+            }
+          }
+        }
+      }
+      .owener {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 167%;
+        color: #fff;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+@media (width <= 768px) {
+  .footer {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+      .footerNav {
+        align-items: center;
+        gap: 32px;
+      }
+      .footer-social {
+        align-items: center;
+        gap: 16px;
+      }
+    }
+  }
+}
+@media (width <= 425px) {
+  .footer {
+    .wrapper {
+      .footerNav {
+        .footer-navList {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

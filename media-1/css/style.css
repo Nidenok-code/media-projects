@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: linear-gradient(150.03deg, #ffffff 0%, #fff4f4 84.51%);
+}
+body a {
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+}
+body button {
+  font-family: "Josefin Sans", sans-serif;
+  border: none;
+}
+body input {
+  font-family: "Josefin Sans", sans-serif;
+  border: none;
+  outline: none;
+  background: none;
+}
+body .continer {
+  height: 100vh;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-image: url(../img/background-1.png), url(../img/background-2.png);
+  background-repeat: no-repeat;
+  background-position: top left, right bottom;
+  background-size: contain, auto;
+}
+body .continer .info {
+  max-width: 659px;
+  padding: 65px 50px 0 165px;
+}
+body .continer .info .logo {
+  display: block;
+  margin-bottom: 136px;
+}
+body .continer .info .img-mobile {
+  display: none;
+}
+body .continer .info h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 111%;
+  letter-spacing: 0.27em;
+  margin-bottom: 32px;
+}
+body .continer .info h1 span {
+  font-weight: 300;
+  line-height: 100%;
+  color: #ce9898;
+}
+body .continer .info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #ce9898;
+  margin-bottom: 40px;
+}
+body .continer .info .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid rgba(206, 152, 152, 0.5);
+  border-radius: 28px;
+}
+body .continer .info .email input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 15px 0 13px 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #ce9898;
+}
+body .continer .info .email input::-webkit-input-placeholder {
+  color: rgba(206, 152, 152, 0.5);
+}
+body .continer .info .email input::-moz-placeholder {
+  color: rgba(206, 152, 152, 0.5);
+}
+body .continer .info .email input:-ms-input-placeholder {
+  color: rgba(206, 152, 152, 0.5);
+}
+body .continer .info .email input::-ms-input-placeholder {
+  color: rgba(206, 152, 152, 0.5);
+}
+body .continer .info .email input::placeholder {
+  color: rgba(206, 152, 152, 0.5);
+}
+body .continer .info .email button {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  width: 100px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
+  -webkit-box-shadow: 0px 15px 20px 0px rgba(198, 110, 110, 0.25);
+          box-shadow: 0px 15px 20px 0px rgba(198, 110, 110, 0.25);
+  -webkit-transform: scale(1.035);
+      -ms-transform: scale(1.035);
+          transform: scale(1.035);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+body .continer .info .email button span {
+  display: block;
+  width: 12.5px;
+  height: 12.5px;
+  margin: 0 auto;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  rotate: 45deg;
+  z-index: 1;
+}
+body .continer .info .email button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+body .continer .info .email button:focus {
+  -webkit-transform: scale(1.07);
+      -ms-transform: scale(1.07);
+          transform: scale(1.07);
+}
+body .continer .info .email button:focus::after {
+  opacity: 0.5;
+}
+body .img {
+  overflow: hidden;
+  height: 100vh;
+}
+body .img img {
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  body .img {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  body .continer {
+    height: auto;
+    padding-bottom: 92px;
+  }
+  body .continer .info {
+    max-width: 100%;
+    padding: 0;
+  }
+  body .continer .info .logo {
+    padding: 32px;
+    margin: 0;
+  }
+  body .continer .info .img-mobile {
+    display: block;
+    margin-bottom: 64px;
+  }
+  body .continer .info .img-mobile img {
+    width: 100%;
+  }
+  body .continer .info h1 {
+    font-size: 40px;
+    line-height: 105%;
+    text-align: center;
+    padding: 0 32px;
+    margin-bottom: 16px;
+  }
+  body .continer .info p {
+    text-align: center;
+    padding: 0 32px;
+    font-size: 14px;
+    line-height: 157%;
+  }
+  body .continer .info .email {
+    margin: 0 32px;
+  }
+  body .continer .info .email button {
+    max-width: 64px;
+  }
+}

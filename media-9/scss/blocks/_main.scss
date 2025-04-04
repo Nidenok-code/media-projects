@@ -1,0 +1,238 @@
+.main {
+  padding-top: 160px;
+  section {
+    margin-bottom: 184px;
+  }
+  h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #000;
+  }
+  .sectionInfo {
+    position: relative;
+    .sectionInfo-img {
+      max-width: 731px;
+      img {
+        width: 100%;
+      }
+    }
+    .sectionInfo-content {
+      max-width: 541px;
+      padding: 95px 0 0 95px;
+      position: absolute;
+      background-color: #fff;
+      bottom: 0;
+      right: 0;
+      .sectionInfo__title {
+        margin-bottom: 25px;
+      }
+      .sectionInfo__text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 167%;
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  .sectionCreations {
+    .btnMobile {
+      display: none;
+    }
+    .sectionCreations__link {
+      padding: 13px 40px;
+      background: none;
+      border: 1px solid;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0.36em;
+      text-transform: uppercase;
+      color: #000;
+      transition: $transition;
+      &:hover {
+        background: #000;
+        color: #fff;
+      }
+    }
+    .sectionCreations-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      margin-bottom: 80px;
+    }
+    .sectionCreations-main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+      justify-items: center;
+      gap: 30px;
+      .sectionCreations__creation {
+        position: relative;
+        width: 256px;
+        height: 450px;
+        padding: 32px 40px;
+        display: flex;
+        align-items: end;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #fff;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all $transition;
+        .creation-title {
+          z-index: 3;
+        }
+        &:nth-child(1) {
+          background-image: url(../img/main/sectionCreation/deepEarth.jpg);
+        }
+        &:nth-child(2) {
+          background-image: url(../img/main/sectionCreation/nightArcade.jpg);
+        }
+        &:nth-child(3) {
+          background-image: url(../img/main/sectionCreation/soccerTeamVr.jpg);
+        }
+        &:nth-child(4) {
+          background-image: url(../img/main/sectionCreation/theGrid.jpg);
+        }
+        &:nth-child(5) {
+          background-image: url(../img/main/sectionCreation/fromUpAboveVr.jpg);
+        }
+        &:nth-child(6) {
+          background-image: url(../img/main/sectionCreation/pocketBotealis.jpg);
+        }
+        &:nth-child(7) {
+          background-image: url(../img/main/sectionCreation/theCuriosity.jpg);
+        }
+        &:nth-child(8) {
+          background-image: url(../img/main/sectionCreation/makeItFisheye.jpg);
+        }
+        &::after {
+          content: "";
+          height: 70%;
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.0001) 0%,
+            rgba(0, 0, 0, 0.6) 100%
+          );
+          z-index: 1;
+        }
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          top: 0;
+          background-color: rgba(255, 255, 255, 0);
+          z-index: 2;
+          transition: all $transition;
+        }
+        &:hover {
+          color: #000;
+          &::before {
+            background-color: rgba(255, 255, 255, 0.75);
+          }
+        }
+      }
+    }
+  }
+}
+@media (width <= 768px) {
+  .main {
+    padding-top: 96px;
+    section {
+      margin-bottom: 96px;
+    }
+    .sectionInfo {
+      .sectionInfo-img {
+        margin-bottom: 48px;
+      }
+      .sectionInfo-content {
+        max-width: 100%;
+        padding: 0;
+        text-align: center;
+        position: relative;
+        .sectionInfo__title {
+          margin-bottom: 16px;
+        }
+      }
+    }
+    .sectionCreations {
+      text-align: center;
+      .btnMobile {
+        display: inline;
+      }
+      .sectionCreations-header {
+        margin-bottom: 48px;
+        justify-content: center;
+        .sectionCreations__link {
+          display: none;
+        }
+      }
+      .sectionCreations-main {
+        margin-bottom: 34px;
+        text-align: start;
+        .sectionCreations__creation {
+          width: 100%;
+          height: 120px;
+          padding: 20px;
+          font-size: 24px;
+          &:nth-child(1) {
+            background-image: url(../img/main/sectionCreation/deepEarth-mobile.jpg);
+          }
+          &:nth-child(2) {
+            background-image: url(../img/main/sectionCreation/nightArcade-mobile.jpg);
+          }
+          &:nth-child(3) {
+            background-image: url(../img/main/sectionCreation/soccerTeamVr-mobile.jpg);
+          }
+          &:nth-child(4) {
+            background-image: url(../img/main/sectionCreation/theGrid-mobile.jpg);
+          }
+          &:nth-child(5) {
+            background-image: url(../img/main/sectionCreation/fromUpAboveVr-mobile.jpg);
+          }
+          &:nth-child(6) {
+            background-image: url(../img/main/sectionCreation/pocketBotealis-mobile.jpg);
+          }
+          &:nth-child(7) {
+            background-image: url(../img/main/sectionCreation/theCuriosity-mobile.jpg);
+          }
+          &:nth-child(8) {
+            background-image: url(../img/main/sectionCreation/makeItFisheye-mobile.jpg);
+          }
+          &::after {
+            content: "";
+            height: auto;
+            width: 70%;
+            top: 0;
+            right: none;
+            background: linear-gradient(
+              -90deg,
+              rgba(0, 0, 0, 0.0001) 0%,
+              rgba(0, 0, 0, 0.601863) 100%
+            );
+          }
+        }
+      }
+    }
+  }
+}
+@media (width <= 425px) {
+  .main {
+    h2 {
+      font-size: 32px;
+    }
+  }
+}
